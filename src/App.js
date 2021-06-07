@@ -3,7 +3,6 @@ function App() {
   return (
     <>
       <Header></Header>
-      <h2>Let's get started!</h2>
     </>
   );
 }
