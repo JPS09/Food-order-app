@@ -1,5 +1,6 @@
 import "./Header.module.css";
-const Header = () => {
+import mealsImage from "../Assets/meals.jpg"; // Importing the img to make it available in react
+const Header = (props) => {
   return (
     <>
       <header>
@@ -7,7 +8,8 @@ const Header = () => {
         <button>Cart placeholder</button>
       </header>
       <div>
-        <img src="" alt="" />
+        {/* Providing the above import into the src attr */}
+        <img src={mealsImage} alt="" />
       </div>
     </>
   );
