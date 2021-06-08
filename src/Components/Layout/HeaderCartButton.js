@@ -4,11 +4,11 @@ import CartIcon from "../Cart/CartIcon.js";
 const HeaderCartButton = () => {
   return (
     <button className={classes.button}>
-      <span>
+      <span classNAme={classes.icon}>
         <CartIcon />
       </span>
       <span> Your Cart</span>
-      <span>0</span>
+      <span className={classes.badge}>0</span>
     </button>
   );
 };
