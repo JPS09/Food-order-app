@@ -1,8 +1,8 @@
 import classes from "./Input.module.css";
 const Input = (props) => {
   <div className={classes.input}>
-    <label htmlFor="input">{props.label}</label>
-    <input id="input" type="text" />
+    <label htmlFor={props.input.id}>{props.label}</label>
+    <input id={props.input.id} type="text" />
   </div>;
 };
 
