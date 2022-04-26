@@ -6,7 +6,7 @@ const Header = (props) => {
     <>
       <header className={classes.header}>
         <h1>ReactFood</h1>
-        <HeaderCartButton></HeaderCartButton>
+        <HeaderCartButton onClick={props.onShowCart}></HeaderCartButton>
       </header>
       <div className={classes["main-image"]}>
         {/* Providing the above import into the src attr */}
