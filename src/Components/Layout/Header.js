@@ -1,5 +1,5 @@
 import classes from "./Header.module.css";
-import mealsImage from "../Assets/meals.jpg"; // Importing the img to make it available in react
+import mealsImage from "../../Assets/meals.jpg"; // Importing the img to make it available in react
 import HeaderCartButton from "./HeaderCartButton.js";
 const Header = (props) => {
   return (
