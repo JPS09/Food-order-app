@@ -1,12 +1,6 @@
 import CartContext from "./cart-context";
 import { useReducer } from "react";
 
-// defaultState for the cart managed here, useful for the useReducer Hook (2nd argument)
-const defaultCartState = {
-  items: [],
-  totalAmount: 0,
-};
-
 //Defining the function that will be passed to the useReducer Hook (1st argument)
 const cartReducer = (state, action) => {
   //Aceessing the type key provided when disptaching the action to sort out the correct behavior
@@ -25,6 +19,13 @@ const cartReducer = (state, action) => {
   // Returning value if not valid
   return defaultCartState;
 };
+
+// defaultState for the cart managed here, useful for the useReducer Hook (2nd argument)
+const defaultCartState = {
+  items: [],
+  totalAmount: 0,
+};
+
 
 const CartProvider = (props) => {
   const [cartState, disptachCartAction] = useReducer(
