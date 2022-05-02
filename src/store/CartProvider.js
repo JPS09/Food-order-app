@@ -22,7 +22,7 @@ const cartReducer = (state, action) => {
       totalAmount: updatedTotalAmount,
     };
   }
-
+  // Returning value if not valid
   return defaultCartState;
 };
 
